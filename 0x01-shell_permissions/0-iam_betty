@@ -1,2 +1,2 @@
 #!/bin/bash
-cu chown betty
+su betty
