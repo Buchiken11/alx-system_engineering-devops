@@ -1,2 +1,2 @@
 #!/bin/bash
-/iacta |head -n 3
+/iacta |head - 3
