@@ -1,1 +1,1 @@
-I am learning
+i am learnig C prorammig
