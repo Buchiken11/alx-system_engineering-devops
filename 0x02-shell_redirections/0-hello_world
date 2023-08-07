@@ -1,2 +1,2 @@
 #!/bin/bash
-cat /n "Hello, Word"
+echo  "Hello, Word"
