@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script displays "bad luck", in the fouth iteration "good luck", in the eight iteration and "Best School" for the others
+
+string1="bad luck"
+string2="good luck"
+string3="Best School"
+counter=1
+while((counter <= 10)); do
+if ((counter == 4)); then
+echo "$string1"
+elif ((counter == 8)); then
+echo "$string2"
+else
+echo "$string3"
+fi
+((counter++))
+done
