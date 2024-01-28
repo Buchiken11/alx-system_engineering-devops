@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script prints time in hours and min
+
+hr=0
+while((hr <= 12)); do
+	echo "Hour: $hr"
+	for ((min = 1; min <= 59; min++)); do
+		echo "$min"
+	done
+	((hr++))
+done
+
