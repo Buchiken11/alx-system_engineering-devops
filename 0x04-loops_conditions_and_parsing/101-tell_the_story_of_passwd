@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Read the file /etc/passwd line by line using a while loop
-while IFS=: read -r username _ uid gid gecos home shell; do
+
+while IFS=: read -r username _ _ _ gid gecos home shell; do
     # Extract user information from gecos field
     IFS=',' read -r _ _ _ _ comment _ <<< "$gecos"
 
