@@ -1,0 +1,11 @@
+#!/bin/bash
+# Read the file /etc/passwd line by line using a while loop
+while IFS=: read -r username _ uid _ _ home _; do
+
+    # Print the desired fields: username, uid, and home directory
+
+    echo "Username: $username"
+    echo "User ID: $uid"
+    echo "Home directory: $home"
+    echo "-------------------------------------------"
+done < /etc/passwd
