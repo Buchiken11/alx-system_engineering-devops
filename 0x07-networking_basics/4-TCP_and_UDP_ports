@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#displys listening ports
+
+netstat -alp

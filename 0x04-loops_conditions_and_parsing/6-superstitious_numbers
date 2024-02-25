@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+#This scrript prints numbers from 1-20
+
+string1="bad luck from China"
+string2="bad luck from Japan"
+string3="bad luck from Italy"
+counter=1
+
+while((counter <= 20)); do
+case $counter in
+	4)
+		echo "$counter"
+		echo "$string1"
+		;;
+	9)
+		echo "$counter"
+		echo "$string2"
+		;;
+	17)
+		echo "$counter"
+		echo "$string3"
+		;;
+	*)
+		echo "$counter"
+esac
+((counter++))
+done

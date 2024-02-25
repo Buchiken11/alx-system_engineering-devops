@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script prints "Best School" ten times usig the until loop
+
+counter=0
+string="Best School"
+until [ $counter -ge 10 ]
+do
+echo "$string"
+counter=$((counter+1))
+done

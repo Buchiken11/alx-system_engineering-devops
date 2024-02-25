@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This script prints the pid of my instances
+echo $$

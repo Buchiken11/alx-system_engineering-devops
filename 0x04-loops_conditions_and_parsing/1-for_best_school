@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script prints Best School ten times to the stout.
+
+s="Best School"
+for ((count = 0; count <= 9; count++)); do
+	echo "$s"
+done

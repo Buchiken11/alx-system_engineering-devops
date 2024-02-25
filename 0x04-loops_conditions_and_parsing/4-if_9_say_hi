@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script prints "Best School" ten times and prints "Best Schoo and Hi" on the 9th iteration on a new line
+
+string="Best School"
+hi="Hi"
+counter=0
+while((counter <= 8)); do
+echo "$string"
+if ((counter == 8)); then
+echo "$hi"
+echo "$string"
+fi
+counter=$((counter+1))
+done

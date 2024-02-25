@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Read the file /etc/passwd line by line using a while loop
+
+while IFS=: read -r username _ _ _ gid gecos home shell; do
+    # Extract user information from gecos field
+    IFS=',' read -r _ _ _ _ comment _ <<< "$gecos"
+
+    # Print the formatted user information
+    echo "The user $username is part of the group $gid gang, lives in $home, and rides $shell."
+    echo "User ID's place is protected by the passcode $(sudo grep -E "^$username:" /etc/shadow | cut -d ':' -f 2) and more info about the user here: $comment"
+    echo "--------------------------------------------------------------"
+done < /etc/passwd
