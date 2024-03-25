@@ -1,6 +1,6 @@
 #!/bin/env bash
-
 # Define the name of the private key
+#
 private_key="school"
 
 # Define the number of bits for the key

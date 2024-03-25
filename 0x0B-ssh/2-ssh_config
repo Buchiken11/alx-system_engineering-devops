@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # SSH Config File
 #
 Host 304102-web-01
