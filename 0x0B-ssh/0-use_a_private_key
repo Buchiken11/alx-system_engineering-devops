@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+ssh ubuntu@52.91.125.33
