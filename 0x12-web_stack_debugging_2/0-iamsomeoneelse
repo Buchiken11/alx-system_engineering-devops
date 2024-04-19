@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# script which has the ability to run anything as another user
+
+# Check if the username is provided as an argument
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 <username>"
+	exit 1
+fi
+
+# Assign the provided username to a variable
+username=$1
+
+# Run the whoami command under the specified user
+sudo -u $username whoami
+
