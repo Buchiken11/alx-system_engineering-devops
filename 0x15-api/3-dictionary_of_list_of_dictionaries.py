@@ -8,10 +8,10 @@ from the JSONPlaceholder API and exports the data to a JSON file.
 import json
 import requests
 
+
 def fetch_user_data():
 
     """Fetch user information and to-do lists for all employees."""
-    
     url = "https://jsonplaceholder.typicode.com/"
     users = requests.get(url + "users").json()
     data_to_export = {}
@@ -32,5 +32,4 @@ def fetch_user_data():
         data_to_export = fetch_user_data()
 
         with open("todo_all_employees.json", "w") as jsonfile:
-            json.dump(data_to_export, jsonfile, indent=4) 
-            
+            json.dump(data_to_export, jsonfile, indent=4)
