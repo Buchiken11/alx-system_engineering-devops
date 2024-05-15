@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+# Nginx config file
+
+server {
+        listen 80 default_server;
+        listen [::]:80 default_server;
+
+        # use either ip address or your domain name as server_name
+        server_name 54.89.182.154
+
+        # Customize HTTP response header
+        add_header X-Served-By 304102-web-01;
+
+        # serve api of Airbnb_clone_v3
+        location /api {
+                proxy_pass http://127.0.0.1:5002/api;
+        }
+
+        error_page 404 /404.hml;
+        location /404 {
+        root /var/www/html;
+        internal;
+        }
+}
